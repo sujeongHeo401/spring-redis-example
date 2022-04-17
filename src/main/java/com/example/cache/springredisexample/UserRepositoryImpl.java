@@ -3,10 +3,12 @@ package com.example.cache.springredisexample;
 import com.example.cache.springredisexample.model.User;
 import org.springframework.data.redis.core.HashOperations;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Map;
 
+@Repository
 public class UserRepositoryImpl implements UserRepository {
     private RedisTemplate<String, User> redisTemplate;
 
